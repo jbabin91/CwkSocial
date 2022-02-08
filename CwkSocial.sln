@@ -3,18 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CwkSocial.Api", "CwkSocial.Api\CwkSocial.Api.csproj", "{183208E3-763D-4ADC-9609-C6D86E8309C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CwkSocial.Api", "CwkSocial.Api\CwkSocial.Api.csproj", "{183208E3-763D-4ADC-9609-C6D86E8309C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cwk.Domain", "Cwk.Domain\Cwk.Domain.csproj", "{FD025EFE-208D-472C-BDB5-104625E1E2BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CwkSocial.Domain", "Cwk.Domain\CwkSocial.Domain.csproj", "{FD025EFE-208D-472C-BDB5-104625E1E2BB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6A8B3894-9BAE-41CC-BD2D-2CEE0A835375}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CwkSocial.Application", "CwkSocial.Application\CwkSocial.Application.csproj", "{D0EEF3F6-C7A3-4B0A-93D4-281C5054B867}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CwkSocial.Application", "CwkSocial.Application\CwkSocial.Application.csproj", "{D0EEF3F6-C7A3-4B0A-93D4-281C5054B867}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CwkSocial.Dal", "CwkSocial.Dal\CwkSocial.Dal.csproj", "{B523A5D1-36F8-4D6F-941A-055C81418885}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CwkSocial.Dal", "CwkSocial.Dal\CwkSocial.Dal.csproj", "{B523A5D1-36F8-4D6F-941A-055C81418885}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

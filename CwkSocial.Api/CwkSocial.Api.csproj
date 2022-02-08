@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Cwk.Domain\Cwk.Domain.csproj" />
+    <ProjectReference Include="..\Cwk.Domain\CwkSocial.Domain.csproj" />
   </ItemGroup>
 
 </Project>
