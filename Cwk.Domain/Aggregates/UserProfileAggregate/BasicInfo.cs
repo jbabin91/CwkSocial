@@ -4,6 +4,7 @@ public sealed class BasicInfo
 {
     private BasicInfo()
     { }
+
     public string FirstName { get; private set; }
     public string LastName { get; private set; }
     public string EmailAddress { get; private set; }
@@ -11,6 +12,7 @@ public sealed class BasicInfo
     public DateTime DateOfBirth { get; private set; }
     public string CurrentCity { get; private set; }
 
+    // Factories
     public static BasicInfo CreateBasicInfo(string firstName, string lastName, string emailAddress, string phone, DateTime dateOfBirth, string currentCity)
     {
         // TODO: implement validation, error handling stratgies, error notification stratgies
@@ -24,4 +26,6 @@ public sealed class BasicInfo
             CurrentCity = currentCity,
         };
     }
+
+    // Public Methods
 }

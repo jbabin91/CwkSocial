@@ -19,5 +19,5 @@ public sealed class PostInteraction
         };
     }
 
-    // public methods
+    // Public Methods
 }

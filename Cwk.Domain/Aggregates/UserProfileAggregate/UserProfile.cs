@@ -3,8 +3,7 @@
 public sealed class UserProfile
 {
     private UserProfile()
-    {
-    }
+    { }
 
     public Guid UserProfileId { get; private set; }
     public string IdentityId { get; private set; }
@@ -12,6 +11,7 @@ public sealed class UserProfile
     public DateTime DateCreated { get; private set; }
     public DateTime LastModified { get; private set; }
 
+    // Factories
     public static UserProfile CreateUserProfile(string identityId, BasicInfo basicInfo)
     {
         // TODO: add validation, error handling strategies, error notification strategies
@@ -25,7 +25,7 @@ public sealed class UserProfile
         };
     }
 
-    // public methods
+    // Public Methods
     public void UpdateBasicInfo(BasicInfo newInfo)
     {
         BasicInfo = newInfo;

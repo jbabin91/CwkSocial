@@ -6,8 +6,10 @@ public sealed class Post
 {
     private readonly List<PostComment> _comments = new();
     private readonly List<PostInteraction> _interactions = new();
+
     private Post()
     { }
+
     public Guid PostId { get; private set; }
     public Guid UserProfileId { get; private set; }
     public UserProfile UserProfile { get; private set; }
@@ -29,28 +31,24 @@ public sealed class Post
         };
     }
 
-    // public methods
+    // Public Methods
     public void UpdatePostText(string newText)
     {
         TextContent = newText;
         LastModified = DateTime.UtcNow;
     }
-
     public void AddComment(PostComment newComment)
     {
         _comments.Add(newComment);
     }
-
     public void RemoveComment(PostComment toRemove)
     {
         _comments.Remove(toRemove);
     }
-
     public void AddInteraction(PostInteraction newInteraction)
     {
         _interactions.Add(newInteraction);
     }
-
     public void RemoveInteraction(PostInteraction toRemove)
     {
         _interactions.Remove(toRemove);

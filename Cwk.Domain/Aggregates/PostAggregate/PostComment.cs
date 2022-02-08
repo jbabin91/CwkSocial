@@ -4,6 +4,7 @@ public sealed class PostComment
 {
     private PostComment()
     { }
+
     public Guid CommentId { get; private set; }
     public Guid PostId { get; private set; }
     public Guid UserProfileId { get; private set; }
@@ -25,7 +26,7 @@ public sealed class PostComment
         };
     }
 
-    // public methods
+    // Public Methods
     public void UpdateCommentText(string newText)
     {
         Text = newText;
