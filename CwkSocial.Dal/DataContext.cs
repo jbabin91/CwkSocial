@@ -14,14 +14,14 @@ namespace CwkSocial.Dal
         public DbSet<UserProfile> UserProfiles { get; set; }
         public DbSet<Post> Posts { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        protected override void OnModelCreating(ModelBuilder builder)
         {
-            modelBuilder.ApplyConfiguration(new PostCommentConfig());
-            modelBuilder.ApplyConfiguration(new PostInteractionConfig());
-            modelBuilder.ApplyConfiguration(new UserProfileConfig());
-            modelBuilder.ApplyConfiguration(new IdentityUserLoginConfig());
-            modelBuilder.ApplyConfiguration(new IdentityUserRoleConfig());
-            modelBuilder.ApplyConfiguration(new IdentityUserTokenConfig());
+            builder.ApplyConfiguration(new PostCommentConfig());
+            builder.ApplyConfiguration(new PostInteractionConfig());
+            builder.ApplyConfiguration(new UserProfileConfig());
+            builder.ApplyConfiguration(new IdentityUserLoginConfig());
+            builder.ApplyConfiguration(new IdentityUserRoleConfig());
+            builder.ApplyConfiguration(new IdentityUserTokenConfig());
         }
     }
 }
